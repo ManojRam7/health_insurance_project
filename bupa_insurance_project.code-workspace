@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "00_Pre_Pilot"
+		},
+		{
+			"path": "01_Bronze_Layer"
+		},
+		{
+			"path": "02_Silver_Layer"
+		},
+		{
+			"path": "04_Reference"
+		},
+		{
+			"path": "Bupa_Data_Generation"
+		},
+		{
+			"path": "03_Gold_Layer"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${workspaceFolder}",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"[python]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "ms-python.python"
+		},
+		"jupyter.notebookFileRoot": "${workspaceFolder}",
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/*.pyc": true
+		}
+	}
+}
