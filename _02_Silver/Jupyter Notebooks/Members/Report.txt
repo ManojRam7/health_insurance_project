@@ -1,0 +1,295 @@
+# 👥 Members Silver Layer – Architecture & Business Report
+
+## Table of Contents
+
+1. [Context & Objective](#1-context--objective)  
+2. [Bronze vs Silver Members](#2-bronze-vs-silver-members)  
+3. [Transformations: Bronze → Silver](#3-transformations-bronze--silver)  
+4. [New Silver Features](#4-new-silver-features)  
+5. [Data Quality & Validation](#5-data-quality--validation)  
+6. [Architecture Diagram](#6-architecture-diagram)  
+7. [Interview Explanation](#7-interview-explanation)  
+
+---
+
+## 1. Context & Objective
+
+The Members Silver layer transforms **raw member records** into a **clean, validated, policy-linked business-ready dataset** that:
+
+- 👤 Creates a single, trusted member dimension  
+- ✅ Enforces member identity & policy consistency  
+- 📊 Adds demographic insights & member-level metrics  
+- 🔒 Provides data quality transparency  
+- 🎯 Enables 360° customer analytics  
+
+**Enterprise standards applied:**
+- Schema enforcement  
+- Primary key validation  
+- Foreign key validation (Policy_ID)  
+- Demographic sanity checks (age, BMI)  
+- Contact data validation (email, phone)  
+- Address standardization  
+- Categorical normalization (gender, status)  
+- Feature engineering (age, tenure)  
+- Data quality flags  
+- Deduplication  
+- Quarantine-first approach  
+- Metrics logging  
+
+---
+
+## 2. Bronze vs Silver Members
+
+| Area | Bronze Issues | Silver Solution |
+|------|---------------|-----------------|
+| **Schema** | Raw CSV types | Enforced enterprise schema |
+| **PK (Member_Key)** | Unvalidated | Strictly validated, duplicates removed |
+| **Demographics** | Unchecked age, gender | Validated & flagged |
+| **Contact Data** | No validation | Email/phone format checks |
+| **Address** | Raw text | Standardized & validated |
+| **Policy FK** | Unvalidated | Linked to Silver Policies |
+| **Age Metrics** | None | Member_Age derived from DOB |
+| **Tenure Metrics** | None | Tenure_Days calculated |
+| **Status** | Messy variants | Standardized (Active/Inactive/Unknown) |
+| **DQ Signals** | None | 4 flags (age, contact, address, status) |
+| **Quarantine** | N/A | Bad records isolated |
+
+**Result:** Single, consistent, trusted member dimension for 360° customer analytics.
+
+---
+
+## 3. Transformations: Bronze → Silver
+
+### Read & Enforce Schema
+
+Cast columns to enterprise schema:
+```
+Member_Key, Member_ID, First_Name, Last_Name,
+Date_of_Birth, Gender, Email, Phone,
+Address, City, Postcode, Member_Status,
+Policy_ID, Member_Registration_Date
+```
+
+### PK Validation
+
+`Member_Key` must not be NULL → otherwise quarantined.
+
+### Deduplication
+
+Keep latest record per `Member_Key`:
+```
+drop_dupes_keep_latest(["Member_Key"], ["Member_Status"])
+```
+
+### Policy FK Validation
+
+- Check: `Policy_ID` exists in Silver Policies  
+- If NULL or invalid → quarantine with code `FK_POLICY_INVALID`  
+- **Business impact:** Ensures members are policy-linked  
+
+### Demographic Validation
+
+**Age validation:**
+- Calculate age from Date_of_Birth  
+- Age must be between 0 and 150  
+- If DOB missing, age = NULL  
+- Flag invalid ages via `dq_age_valid` (1 = valid, 0 = implausible)  
+
+**Gender validation:**
+- Standardize to {M, F, Other} or NULL  
+- Invalid values → set to Unknown (not quarantined)  
+
+### Contact Data Validation
+
+**Email validation:**
+- Basic format check (contains @, domain)  
+- Flag invalid emails via `dq_contact_valid` (1 = valid, 0 = invalid format)  
+
+**Phone validation:**
+- UK phone format expected  
+- Basic sanity (11 digits, +44 prefix, etc.)  
+- Flag invalid via `dq_contact_valid`  
+
+### Address Standardization
+
+- Trim and uppercase  
+- Validate postcode format (UK postcodes: letters & numbers)  
+- Flag invalid addresses via `dq_address_valid` (1 = valid, 0 = invalid)  
+
+### Status Normalization
+
+Standardize to controlled list:
+```python
+Member_Status_Clean = CASE
+  WHEN Member_Status IN ('Active', 'Inactive', 'Lapsed') THEN Member_Status
+  ELSE 'Unknown'
+END
+```
+
+Flag status validity via `dq_status_valid` (1 = known, 0 = unknown).
+
+### Feature Engineering
+
+#### Member_Age
+```python
+Member_Age = year(current_date()) - year(Date_of_Birth)
+# NULL if DOB missing or invalid
+```
+**Business value:**
+- Age-based segmentation (risk, pricing)  
+- Compliance monitoring (minimum age)  
+- Customer profiling & analytics  
+
+#### Tenure_Days
+```python
+Tenure_Days = datediff(current_date(), Member_Registration_Date)
+# Days as active member
+```
+**Business value:**
+- Loyalty metrics & churn prediction  
+- Retention campaign targeting  
+- LTV (lifetime value) calculations  
+
+### Write to Silver
+
+- **Delta path:** `silverdata/members`  
+- **Table:** `bupa_silver.members`  
+- **Schema-aware overwrite** ensures stability  
+
+### Metrics Logging
+
+Tracked in `silverdata/_metrics`:
+- `rowcount_members_silver`  
+- `distinct_member_keys`  
+- `dq_age_valid_coverage %`  
+- `dq_contact_valid_coverage %`  
+- `dq_address_valid_coverage %`  
+- `dq_status_valid_coverage %`  
+- Quarantine counts by violation type  
+
+---
+
+## 4. New Silver Features
+
+| Feature | Type | Purpose | Example |
+|---------|------|---------|---------|
+| **Member_Age** | int | Current age from DOB | 35, 67, NULL |
+| **Tenure_Days** | int | Days as member | 365, 1825 |
+| **Member_Status_Clean** | string | Standardized status | Active, Inactive, Unknown |
+| **dq_age_valid** | int | Age in valid range | 1 or 0 |
+| **dq_contact_valid** | int | Email/phone valid format | 1 or 0 |
+| **dq_address_valid** | int | Address & postcode valid | 1 or 0 |
+| **dq_status_valid** | int | Status is known value | 1 or 0 |
+
+**Key insight:** These fields are **added by Silver**, not in Bronze. They enable:
+- 📊 Reliable member analytics  
+- 🎯 Accurate segmentation & targeting  
+- 🔍 Transparent data quality  
+- 📈 Churn & retention modeling  
+
+---
+
+## 5. Data Quality & Validation
+
+### Quarantine Strategy
+
+No bad data is silently dropped. Invalid rows are captured with:
+- Violation code (PK_NULL, FK_POLICY_INVALID, AGE_INVALID, EMAIL_FORMAT, etc.)  
+- Timestamp  
+- Full record  
+
+**Location:** `silverdata/_quarantine/members/<violation_type>`
+
+### DQ Expectations
+
+Hard rules (quarantine on failure):
+- `Member_Key` not NULL  
+- `Policy_ID` matches Silver Policies (FK valid)  
+
+Soft rules (flag but include):
+- `dq_age_valid`, `dq_contact_valid`, `dq_address_valid`, `dq_status_valid`  
+
+This allows:
+- Filtering in dashboards: "only DQ-clean rows"  
+- Monitoring quality trends  
+- Transparent governance  
+
+---
+
+## 6. Architecture Diagram
+
+```
+┌──────────────────────────────────┐
+│   Bronze Layer (rawdata)          │
+│   bronze.members                  │
+│   • Raw types                     │
+│   • Duplicates                    │
+│   • Bad demographics              │
+│   • Invalid contacts              │
+│   • Messy addresses               │
+│   • No KPIs                       │
+│   • No DQ tracking                │
+└────────────┬──────────────────────┘
+             │
+             │  Schema enforcement
+             │  PK validation
+             │  Policy FK check
+             │  Demographic validation
+             │  Contact validation
+             │  Address standardization
+             │  Status normalization
+             │  Member_Age derivation
+             │  Tenure_Days calculation
+             │  Add 4 DQ flags
+             ▼
+┌──────────────────────────────────┐
+│   Silver Layer (silverdata)       │
+│   bupa_silver.members             │
+│   • Enterprise schema             │
+│   • Deduplicated                  │
+│   • Validated policy link         │
+│   • Validated demographics        │
+│   • Standardized contacts         │
+│   • Standardized addresses        │
+│   • Member_Age KPI                │
+│   • Tenure_Days KPI               │
+│   • 4 DQ flags (age, contact,     │
+│     address, status)              │
+└────────────┬──────────────────────┘
+             │
+      ┌──────┴──────┬──────────────┐
+      ▼             ▼              ▼
+  _quarantine  _metrics      Dashboards
+ (bad members) (observability) (BI tools)
+      │             │              │
+      └─────────────┼──────────────┘
+                    │
+                    ▼
+      Member 360° Analytics
+      Segmentation & Targeting
+      Churn & Retention Modeling
+      Compliance Reporting
+```
+
+---
+
+## 7. Interview Explanation
+
+> "The Members Silver layer transforms raw member records into a trusted customer dimension. I enforce strict schema, validate and standardize demographic data (age, gender), validate contact information (email, phone format), standardize addresses and postcodes, and enforce policy referential integrity. I deduplicate by Member_Key, add business-friendly KPIs like Member_Age and Tenure_Days, and implement comprehensive data quality flags so downstream users can confidently filter data and understand data health. All invalid records are quarantined with audit codes, never silently dropped. The result is a single, reliable member dimension that powers 360° customer analytics, targeting campaigns, churn prediction, and compliance reporting."
+
+### Key Talking Points
+- ✅ Single source of truth for members  
+- ✅ Deduplication (latest per Member_Key)  
+- ✅ Policy FK validation & integrity  
+- ✅ Demographic validation (age, gender)  
+- ✅ Contact & address standardization  
+- ✅ Member_Age KPI (segmentation, compliance)  
+- ✅ Tenure_Days KPI (loyalty, churn risk)  
+- ✅ Status normalization (Active/Inactive/Unknown)  
+- ✅ 4 DQ flags for transparency  
+- ✅ Quarantine + metrics for governance  
+- ✅ 360° customer analytics ready  
+
+---
+
+**Last Updated:** December 2025 | **Status:** Production | **Owner:** Data Engineering
