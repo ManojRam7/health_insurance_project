@@ -1,0 +1,15 @@
+creation_timestamp: 1765554719123
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1765554719123
+model_id: null
+name: bupa_claims_fraud_model
+run_id: 5185454fc3b744c4bba46b9a490f8a70
+run_link: null
+source: runs:/5185454fc3b744c4bba46b9a490f8a70/fraud_best_model
+status: READY
+status_message: null
+storage_location: runs:/5185454fc3b744c4bba46b9a490f8a70/fraud_best_model
+user_id: null
+version: 2

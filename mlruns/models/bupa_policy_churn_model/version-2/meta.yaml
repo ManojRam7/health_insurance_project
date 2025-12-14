@@ -1,0 +1,15 @@
+creation_timestamp: 1765539552095
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1765539552095
+model_id: null
+name: bupa_policy_churn_model
+run_id: null
+run_link: null
+source: runs:/1d793194cbc7430b979be6b4722182e3/best_policy_churn_model
+status: READY
+status_message: null
+storage_location: runs:/1d793194cbc7430b979be6b4722182e3/best_policy_churn_model
+user_id: null
+version: 2

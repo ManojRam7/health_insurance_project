@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.OneHotEncoderModel","timestamp":1765556557608,"sparkVersion":"3.5.1","uid":"OneHotEncoder_883205d80f73","paramMap":{"outputCol":"Tenure_Band_oh","inputCol":"Tenure_Band_idx"},"defaultParamMap":{"dropLast":true,"outputCol":"OneHotEncoder_883205d80f73__output","handleInvalid":"error"}}

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/manojrammopati/Public/Projects/bupa_insurance_project/mlruns/840770085371529930/1d793194cbc7430b979be6b4722182e3/artifacts
+end_time: 1765499080545
+entry_point_name: ''
+experiment_id: '840770085371529930'
+lifecycle_stage: active
+run_id: 1d793194cbc7430b979be6b4722182e3
+run_name: policy_churn_randomforest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765499064470
+status: 3
+tags: []
+user_id: manojrammopati

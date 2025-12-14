@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/manojrammopati/Public/Projects/bupa_insurance_project/mlruns/840770085371529930/fa5e34cc4448442a93601fc1240afa03/artifacts
+deleted_time: 1765505525669
+end_time: 1765505176388
+entry_point_name: ''
+experiment_id: '840770085371529930'
+lifecycle_stage: deleted
+run_id: fa5e34cc4448442a93601fc1240afa03
+run_name: fraud_detection_training
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765505165482
+status: 4
+tags: []
+user_id: manojrammopati

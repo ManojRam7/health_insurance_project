@@ -1,0 +1,21 @@
+artifact_path: fraud_best_model
+flavors:
+  python_function:
+    data: sparkml
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.spark
+    python_version: 3.10.19
+  spark:
+    code: null
+    model_class: pyspark.ml.pipeline.PipelineModel
+    model_data: sparkml
+    pyspark_version: 3.5.1
+mlflow_version: 3.7.0
+model_id: null
+model_size_bytes: 99878
+model_uuid: e2e0a5d0486047d38f0430cf8c4de474
+prompts: null
+run_id: 848e2e72427846478097ae3abc2363a6
+utc_time_created: '2025-12-12 12:41:38.592527'
