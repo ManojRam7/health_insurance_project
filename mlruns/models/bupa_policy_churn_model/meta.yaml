@@ -1,8 +1,9 @@
 aliases:
   prod: '11'
+  staging: '12'
 creation_timestamp: 1765507811502
 deployment_job_id: null
 deployment_job_state: null
 description: null
-last_updated_timestamp: 1765560408342
+last_updated_timestamp: 1765994018793
 name: bupa_policy_churn_model

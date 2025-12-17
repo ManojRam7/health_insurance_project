@@ -1,8 +1,9 @@
 aliases:
   prod: '5'
+  staging: '6'
 creation_timestamp: 1765507196244
 deployment_job_id: null
 deployment_job_state: null
 description: null
-last_updated_timestamp: 1765560398235
+last_updated_timestamp: 1765994018980
 name: bupa_high_cost_model
