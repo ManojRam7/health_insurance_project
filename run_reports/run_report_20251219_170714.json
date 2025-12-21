@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "run_id": "20251219_170714",
+    "started_utc": "2025-12-19T17:07:14.710701",
+    "finished_utc": "2025-12-19T18:13:37.136661",
+    "duration_seconds": 3982.42596,
+    "from_index": 0,
+    "overall_status": "SUCCESS",
+    "total_notebooks": 26,
+    "success_count": 26,
+    "failed_count": 0
+  },
+  "notebooks": [
+    {
+      "index": 0,
+      "name": "Pre-pilot \u2013 Spark & ADLS connectivity (_00_Pre_Pilot/Jupyter Notebooks/01_spark_adls_connectors.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:07:14.710995",
+      "finished_utc": "2025-12-19T17:07:24.936583",
+      "duration_seconds": 10.225573584088124,
+      "error": null
+    },
+    {
+      "index": 1,
+      "name": "Bronze \u2013 data container & mounts (_01_Bronze/Jupyter Notebooks/00_bronze_data_connector.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:07:24.936865",
+      "finished_utc": "2025-12-19T17:08:09.818216",
+      "duration_seconds": 44.881621208041906,
+      "error": null
+    },
+    {
+      "index": 2,
+      "name": "Bronze \u2013 raw CSV \u2192 Delta (_01_Bronze/Jupyter Notebooks/01_data_load.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:08:09.818449",
+      "finished_utc": "2025-12-19T17:10:06.236731",
+      "duration_seconds": 116.41756499989424,
+      "error": null
+    },
+    {
+      "index": 3,
+      "name": "Silver \u2013 Policies (_02_Silver/Jupyter Notebooks/Policies/01_policies_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:10:06.242453",
+      "finished_utc": "2025-12-19T17:15:18.284607",
+      "duration_seconds": 312.04340679198503,
+      "error": null
+    },
+    {
+      "index": 4,
+      "name": "Silver \u2013 Members (_02_Silver/Jupyter Notebooks/Members/02_members_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:15:18.293988",
+      "finished_utc": "2025-12-19T17:19:50.749199",
+      "duration_seconds": 272.45661154191475,
+      "error": null
+    },
+    {
+      "index": 5,
+      "name": "Silver \u2013 Claims (_02_Silver/Jupyter Notebooks/Claims/03_claims_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:19:50.755938",
+      "finished_utc": "2025-12-19T17:22:48.927648",
+      "duration_seconds": 178.17285745800473,
+      "error": null
+    },
+    {
+      "index": 6,
+      "name": "Silver \u2013 Providers (_02_Silver/Jupyter Notebooks/Providers/04_providers_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:22:48.929522",
+      "finished_utc": "2025-12-19T17:24:42.135953",
+      "duration_seconds": 113.16023820801638,
+      "error": null
+    },
+    {
+      "index": 7,
+      "name": "Gold \u2013 fact_claims (_03_Gold/01_fact_dim_dm_star/_01__fact_claims/01_fact_claims.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:24:42.136491",
+      "finished_utc": "2025-12-19T17:27:49.858595",
+      "duration_seconds": 187.7213268330088,
+      "error": null
+    },
+    {
+      "index": 8,
+      "name": "Gold \u2013 fact_policies (_03_Gold/01_fact_dim_dm_star/_02__fact_policies/01_fact_policies.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:27:49.860882",
+      "finished_utc": "2025-12-19T17:31:33.743837",
+      "duration_seconds": 223.88200266601052,
+      "error": null
+    },
+    {
+      "index": 9,
+      "name": "Gold \u2013 fact_members (_03_Gold/01_fact_dim_dm_star/_03__fact_members/01_fact_members.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:31:33.746517",
+      "finished_utc": "2025-12-19T17:33:53.563995",
+      "duration_seconds": 139.8170521670254,
+      "error": null
+    },
+    {
+      "index": 10,
+      "name": "Gold \u2013 dim tables (channel, product, region, member_segment) (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/01_dim_tables.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:33:53.564504",
+      "finished_utc": "2025-12-19T17:36:30.534724",
+      "duration_seconds": 156.96972162497696,
+      "error": null
+    },
+    {
+      "index": 11,
+      "name": "Gold \u2013 dim_providers (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/02_dim_providers.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:36:30.536598",
+      "finished_utc": "2025-12-19T17:37:39.619205",
+      "duration_seconds": 69.08239070803393,
+      "error": null
+    },
+    {
+      "index": 12,
+      "name": "Gold \u2013 dm_policy_retention (_03_Gold/01_fact_dim_dm_star/_05__data_marts/01_dm_policy_retention.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:37:39.620804",
+      "finished_utc": "2025-12-19T17:39:07.614477",
+      "duration_seconds": 87.99339149997104,
+      "error": null
+    },
+    {
+      "index": 13,
+      "name": "Gold \u2013 dm_member_value (_03_Gold/01_fact_dim_dm_star/_05__data_marts/02_dm_member_value.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:39:07.615008",
+      "finished_utc": "2025-12-19T17:41:20.405429",
+      "duration_seconds": 132.78976754203904,
+      "error": null
+    },
+    {
+      "index": 14,
+      "name": "Gold \u2013 dm_claims_experience (_03_Gold/01_fact_dim_dm_star/_05__data_marts/03_dm_claims_experience.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:41:20.407032",
+      "finished_utc": "2025-12-19T17:42:59.477347",
+      "duration_seconds": 99.07000420801342,
+      "error": null
+    },
+    {
+      "index": 15,
+      "name": "Gold \u2013 star_claims (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/01_star_claims.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:42:59.479192",
+      "finished_utc": "2025-12-19T17:44:32.321754",
+      "duration_seconds": 92.84227170795202,
+      "error": null
+    },
+    {
+      "index": 16,
+      "name": "Gold \u2013 star_policies (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/02_star_policies.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:44:32.322274",
+      "finished_utc": "2025-12-19T17:45:57.226302",
+      "duration_seconds": 84.90375608298928,
+      "error": null
+    },
+    {
+      "index": 17,
+      "name": "Gold \u2013 star_members (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/03_star_members.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:45:57.226714",
+      "finished_utc": "2025-12-19T17:47:18.439642",
+      "duration_seconds": 81.21264524990693,
+      "error": null
+    },
+    {
+      "index": 18,
+      "name": "ML Features \u2013 claim features (_03_Gold/02_ML_Features/01_claim_features.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:47:18.441311",
+      "finished_utc": "2025-12-19T17:49:39.944757",
+      "duration_seconds": 141.50299795798492,
+      "error": null
+    },
+    {
+      "index": 19,
+      "name": "ML Features \u2013 feature analysis (_03_Gold/02_ML_Features/02_ML_Feature_Analysis.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:49:39.945975",
+      "finished_utc": "2025-12-19T17:51:01.472440",
+      "duration_seconds": 81.52618191705551,
+      "error": null
+    },
+    {
+      "index": 20,
+      "name": "ML \u2013 policy churn model (_03_Gold/03_ML_Model_Training/01_policy_churn_prediction/01_policy_churn_training.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:51:01.473951",
+      "finished_utc": "2025-12-19T17:54:37.590383",
+      "duration_seconds": 216.11578733299393,
+      "error": null
+    },
+    {
+      "index": 21,
+      "name": "ML \u2013 claims fraud model (_03_Gold/03_ML_Model_Training/02_claims_risk_prediction/01_Is_fraudulent_claim.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T17:54:37.590993",
+      "finished_utc": "2025-12-19T18:01:39.379468",
+      "duration_seconds": 421.78696924995165,
+      "error": null
+    },
+    {
+      "index": 22,
+      "name": "ML \u2013 high-cost claims model (_03_Gold/03_ML_Model_Training/02_claims_risk_prediction/02_Is_high_cost_model.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T18:01:39.381883",
+      "finished_utc": "2025-12-19T18:08:40.294074",
+      "duration_seconds": 420.9109644580167,
+      "error": null
+    },
+    {
+      "index": 23,
+      "name": "ML \u2013 batch scoring policy churn (_03_Gold/03_ML_Model_Training/03_batch_scoring/01_score_policy_churn.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T18:08:40.296512",
+      "finished_utc": "2025-12-19T18:10:14.247176",
+      "duration_seconds": 93.90292658400722,
+      "error": null
+    },
+    {
+      "index": 24,
+      "name": "ML \u2013 batch scoring claim fraud (_03_Gold/03_ML_Model_Training/03_batch_scoring/02_score_claim_fraud.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T18:10:14.248314",
+      "finished_utc": "2025-12-19T18:12:02.045533",
+      "duration_seconds": 107.7950007080799,
+      "error": null
+    },
+    {
+      "index": 25,
+      "name": "ML \u2013 batch scoring high-cost claims (_03_Gold/03_ML_Model_Training/03_batch_scoring/03_score_high_cost_claims.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T18:12:02.046205",
+      "finished_utc": "2025-12-19T18:13:37.129950",
+      "duration_seconds": 95.08218095893972,
+      "error": null
+    }
+  ]
+}

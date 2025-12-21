@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "run_id": "20251218_233836",
+    "started_utc": "2025-12-18T23:38:36.872867",
+    "finished_utc": "2025-12-18T23:59:12.769128",
+    "duration_seconds": 1235.896261,
+    "from_index": 0,
+    "overall_status": "FAILED",
+    "total_notebooks": 11,
+    "success_count": 10,
+    "failed_count": 1
+  },
+  "notebooks": [
+    {
+      "index": 0,
+      "name": "Pre-pilot \u2013 Spark & ADLS connectivity (_00_Pre_Pilot/Jupyter Notebooks/01_spark_adls_connectors.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:38:36.873351",
+      "finished_utc": "2025-12-18T23:38:43.814457",
+      "duration_seconds": 6.9411776249762625,
+      "error": null
+    },
+    {
+      "index": 1,
+      "name": "Bronze \u2013 data container & mounts (_01_Bronze/Jupyter Notebooks/00_bronze_data_connector.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:38:43.814698",
+      "finished_utc": "2025-12-18T23:39:19.006623",
+      "duration_seconds": 35.192497416981496,
+      "error": null
+    },
+    {
+      "index": 2,
+      "name": "Bronze \u2013 raw CSV \u2192 Delta (_01_Bronze/Jupyter Notebooks/01_data_load.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:39:19.006918",
+      "finished_utc": "2025-12-18T23:40:07.588142",
+      "duration_seconds": 48.5820268340176,
+      "error": null
+    },
+    {
+      "index": 3,
+      "name": "Silver \u2013 Policies (_02_Silver/Jupyter Notebooks/Policies/01_policies_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:40:07.588493",
+      "finished_utc": "2025-12-18T23:43:11.581188",
+      "duration_seconds": 183.995866375044,
+      "error": null
+    },
+    {
+      "index": 4,
+      "name": "Silver \u2013 Members (_02_Silver/Jupyter Notebooks/Members/02_members_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:43:11.583544",
+      "finished_utc": "2025-12-18T23:46:00.279685",
+      "duration_seconds": 168.6990572080249,
+      "error": null
+    },
+    {
+      "index": 5,
+      "name": "Silver \u2013 Claims (_02_Silver/Jupyter Notebooks/Claims/03_claims_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:46:00.279945",
+      "finished_utc": "2025-12-18T23:48:55.393697",
+      "duration_seconds": 175.1167645000387,
+      "error": null
+    },
+    {
+      "index": 6,
+      "name": "Silver \u2013 Providers (_02_Silver/Jupyter Notebooks/Providers/04_providers_silver.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:48:55.396467",
+      "finished_utc": "2025-12-18T23:50:51.307585",
+      "duration_seconds": 115.91270470793825,
+      "error": null
+    },
+    {
+      "index": 7,
+      "name": "Gold \u2013 fact_claims (_03_Gold/01_fact_dim_dm_star/_01__fact_claims/01_fact_claims.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:50:51.309954",
+      "finished_utc": "2025-12-18T23:54:12.284948",
+      "duration_seconds": 200.97808108304162,
+      "error": null
+    },
+    {
+      "index": 8,
+      "name": "Gold \u2013 fact_policies (_03_Gold/01_fact_dim_dm_star/_02__fact_policies/01_fact_policies.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:54:12.290271",
+      "finished_utc": "2025-12-18T23:56:49.735172",
+      "duration_seconds": 157.40628183295485,
+      "error": null
+    },
+    {
+      "index": 9,
+      "name": "Gold \u2013 fact_members (_03_Gold/01_fact_dim_dm_star/_03__fact_members/01_fact_members.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-18T23:56:49.737334",
+      "finished_utc": "2025-12-18T23:58:34.628338",
+      "duration_seconds": 104.8913798329886,
+      "error": null
+    },
+    {
+      "index": 10,
+      "name": "Gold \u2013 dim tables (channel, product, region, member_segment) (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/01_dim_tables.ipynb)",
+      "status": "FAILED",
+      "started_utc": "2025-12-18T23:58:34.628898",
+      "finished_utc": "2025-12-18T23:59:12.769075",
+      "duration_seconds": 38.14031312498264,
+      "error": "Traceback (most recent call last):\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 459, in main\n    execute_notebook(nb_path)\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 312, in execute_notebook\n    ep.preprocess(nb, {\"metadata\": {\"path\": str(nb_path.parent)}})\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbconvert/preprocessors/execute.py\", line 102, in preprocess\n    self.preprocess_cell(cell, resources, index)\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbconvert/preprocessors/execute.py\", line 123, in preprocess_cell\n    cell = self.execute_cell(cell, index, store_history=True)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbclient/client.py\", line 1058, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbclient/client.py\", line 914, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# Replace with your actual storage account and path\nfact_policies = spark.read.format(\"delta\").load(\"abfss://golddata@clientdatastorage.dfs.core.windows.net/fact_policies\")\nfact_members  = spark.read.format(\"delta\").load(\"abfss://silverdata@clientdatastorage.dfs.core.windows.net/gold/fact_members\")\nfact_claims   = spark.read.format(\"delta\").load(\"abfss://silverdata@clientdatastorage.dfs.core.windows.net/gold/fact_claims\")\n------------------\n\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mAnalysisException\u001b[0m                         Traceback (most recent call last)\nCell \u001b[0;32mIn[3], line 3\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# Replace with your actual storage account and path\u001b[39;00m\n\u001b[1;32m      2\u001b[0m fact_policies \u001b[38;5;241m=\u001b[39m spark\u001b[38;5;241m.\u001b[39mread\u001b[38;5;241m.\u001b[39mformat(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdelta\u001b[39m\u001b[38;5;124m\"\u001b[39m)\u001b[38;5;241m.\u001b[39mload(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mabfss://golddata@clientdatastorage.dfs.core.windows.net/fact_policies\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[0;32m----> 3\u001b[0m fact_members  \u001b[38;5;241m=\u001b[39m spark\u001b[38;5;241m.\u001b[39mread\u001b[38;5;241m.\u001b[39mformat(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdelta\u001b[39m\u001b[38;5;124m\"\u001b[39m)\u001b[38;5;241m.\u001b[39mload(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mabfss://silverdata@clientdatastorage.dfs.core.windows.net/gold/fact_members\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m      4\u001b[0m fact_claims   \u001b[38;5;241m=\u001b[39m spark\u001b[38;5;241m.\u001b[39mread\u001b[38;5;241m.\u001b[39mformat(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdelta\u001b[39m\u001b[38;5;124m\"\u001b[39m)\u001b[38;5;241m.\u001b[39mload(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mabfss://silverdata@clientdatastorage.dfs.core.windows.net/gold/fact_claims\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/pyspark/sql/readwriter.py:307\u001b[0m, in \u001b[0;36mDataFrameReader.load\u001b[0;34m(self, path, format, schema, **options)\u001b[0m\n\u001b[1;32m    305\u001b[0m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39moptions(\u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39moptions)\n\u001b[1;32m    306\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(path, \u001b[38;5;28mstr\u001b[39m):\n\u001b[0;32m--> 307\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_df(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_jreader\u001b[38;5;241m.\u001b[39mload(path))\n\u001b[1;32m    308\u001b[0m \u001b[38;5;28;01melif\u001b[39;00m path \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[1;32m    309\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28mtype\u001b[39m(path) \u001b[38;5;241m!=\u001b[39m \u001b[38;5;28mlist\u001b[39m:\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/py4j/java_gateway.py:1322\u001b[0m, in \u001b[0;36mJavaMember.__call__\u001b[0;34m(self, *args)\u001b[0m\n\u001b[1;32m   1316\u001b[0m command \u001b[38;5;241m=\u001b[39m proto\u001b[38;5;241m.\u001b[39mCALL_COMMAND_NAME \u001b[38;5;241m+\u001b[39m\\\n\u001b[1;32m   1317\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mcommand_header \u001b[38;5;241m+\u001b[39m\\\n\u001b[1;32m   1318\u001b[0m     args_command \u001b[38;5;241m+\u001b[39m\\\n\u001b[1;32m   1319\u001b[0m     proto\u001b[38;5;241m.\u001b[39mEND_COMMAND_PART\n\u001b[1;32m   1321\u001b[0m answer \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mgateway_client\u001b[38;5;241m.\u001b[39msend_command(command)\n\u001b[0;32m-> 1322\u001b[0m return_value \u001b[38;5;241m=\u001b[39m get_return_value(\n\u001b[1;32m   1323\u001b[0m     answer, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mgateway_client, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mtarget_id, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname)\n\u001b[1;32m   1325\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m temp_arg \u001b[38;5;129;01min\u001b[39;00m temp_args:\n\u001b[1;32m   1326\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28mhasattr\u001b[39m(temp_arg, \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m_detach\u001b[39m\u001b[38;5;124m\"\u001b[39m):\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py:185\u001b[0m, in \u001b[0;36mcapture_sql_exception.<locals>.deco\u001b[0;34m(*a, **kw)\u001b[0m\n\u001b[1;32m    181\u001b[0m converted \u001b[38;5;241m=\u001b[39m convert_exception(e\u001b[38;5;241m.\u001b[39mjava_exception)\n\u001b[1;32m    182\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(converted, UnknownException):\n\u001b[1;32m    183\u001b[0m     \u001b[38;5;66;03m# Hide where the exception came from that shows a non-Pythonic\u001b[39;00m\n\u001b[1;32m    184\u001b[0m     \u001b[38;5;66;03m# JVM exception message.\u001b[39;00m\n\u001b[0;32m--> 185\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m converted \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[1;32m    186\u001b[0m \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m    187\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m\n\n\u001b[0;31mAnalysisException\u001b[0m: [PATH_NOT_FOUND] Path does not exist: abfss://silverdata@clientdatastorage.dfs.core.windows.net/gold/fact_members.\n\n"
+    }
+  ]
+}

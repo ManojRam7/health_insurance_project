@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "run_id": "20251219_140253",
+    "started_utc": "2025-12-19T14:02:53.205116",
+    "finished_utc": "2025-12-19T14:03:31.763034",
+    "duration_seconds": 38.557918,
+    "from_index": 20,
+    "overall_status": "FAILED",
+    "total_notebooks": 21,
+    "success_count": 0,
+    "failed_count": 1
+  },
+  "notebooks": [
+    {
+      "index": 0,
+      "name": "Pre-pilot \u2013 Spark & ADLS connectivity (_00_Pre_Pilot/Jupyter Notebooks/01_spark_adls_connectors.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 1,
+      "name": "Bronze \u2013 data container & mounts (_01_Bronze/Jupyter Notebooks/00_bronze_data_connector.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 2,
+      "name": "Bronze \u2013 raw CSV \u2192 Delta (_01_Bronze/Jupyter Notebooks/01_data_load.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 3,
+      "name": "Silver \u2013 Policies (_02_Silver/Jupyter Notebooks/Policies/01_policies_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 4,
+      "name": "Silver \u2013 Members (_02_Silver/Jupyter Notebooks/Members/02_members_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 5,
+      "name": "Silver \u2013 Claims (_02_Silver/Jupyter Notebooks/Claims/03_claims_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 6,
+      "name": "Silver \u2013 Providers (_02_Silver/Jupyter Notebooks/Providers/04_providers_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 7,
+      "name": "Gold \u2013 fact_claims (_03_Gold/01_fact_dim_dm_star/_01__fact_claims/01_fact_claims.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 8,
+      "name": "Gold \u2013 fact_policies (_03_Gold/01_fact_dim_dm_star/_02__fact_policies/01_fact_policies.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 9,
+      "name": "Gold \u2013 fact_members (_03_Gold/01_fact_dim_dm_star/_03__fact_members/01_fact_members.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 10,
+      "name": "Gold \u2013 dim tables (channel, product, region, member_segment) (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/01_dim_tables.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 11,
+      "name": "Gold \u2013 dim_providers (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/02_dim_providers.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 12,
+      "name": "Gold \u2013 dm_policy_retention (_03_Gold/01_fact_dim_dm_star/_05__data_marts/01_dm_policy_retention.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 13,
+      "name": "Gold \u2013 dm_member_value (_03_Gold/01_fact_dim_dm_star/_05__data_marts/02_dm_member_value.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 14,
+      "name": "Gold \u2013 dm_claims_experience (_03_Gold/01_fact_dim_dm_star/_05__data_marts/03_dm_claims_experience.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 15,
+      "name": "Gold \u2013 star_claims (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/01_star_claims.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 16,
+      "name": "Gold \u2013 star_policies (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/02_star_policies.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 17,
+      "name": "Gold \u2013 star_members (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/03_star_members.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 18,
+      "name": "ML Features \u2013 claim features (_03_Gold/02_ML_Features/01_claim_features.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 19,
+      "name": "ML Features \u2013 feature analysis (_03_Gold/02_ML_Features/02_ML_Feature_Analysis.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 20,
+      "name": "ML \u2013 policy churn model (_03_Gold/03_ML_Model_Training/01_policy_churn_prediction/01_policy_churn_training.ipynb)",
+      "status": "FAILED",
+      "started_utc": "2025-12-19T14:02:53.205996",
+      "finished_utc": "2025-12-19T14:03:31.763004",
+      "duration_seconds": 38.557531374972314,
+      "error": "Traceback (most recent call last):\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 448, in main\n    execute_notebook(nb_path)\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 301, in execute_notebook\n    ep.preprocess(nb, {\"metadata\": {\"path\": str(nb_path.parent)}})\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbconvert/preprocessors/execute.py\", line 102, in preprocess\n    self.preprocess_cell(cell, resources, index)\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbconvert/preprocessors/execute.py\", line 123, in preprocess_cell\n    cell = self.execute_cell(cell, index, store_history=True)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbclient/client.py\", line 1058, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbclient/client.py\", line 914, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# Cell 0b \u2014 MLflow setup\nfrom pathlib import Path\nimport mlflow\nimport mlflow.spark\n\nPROJECT_ROOT = Path(\"/Users/manojrammopati/Public/Projects/bupa_insurance_project\")\n\n# File-based tracking store inside the repo\nTRACKING_URI = f\"file:{PROJECT_ROOT / 'mlruns'}\"\nmlflow.set_tracking_uri(TRACKING_URI)\n\n# One experiment per use case\nmlflow.set_experiment(\"bupa_policy_churn\")\n\nprint(\"MLflow tracking URI:\", mlflow.get_tracking_uri())\n\n------------------\n\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mImportError\u001b[0m                               Traceback (most recent call last)\nCell \u001b[0;32mIn[4], line 3\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# Cell 0b \u2014 MLflow setup\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mpathlib\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Path\n\u001b[0;32m----> 3\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\n\u001b[1;32m      4\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mspark\u001b[39;00m\n\u001b[1;32m      6\u001b[0m PROJECT_ROOT \u001b[38;5;241m=\u001b[39m Path(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m/Users/manojrammopati/Public/Projects/bupa_insurance_project\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/mlflow/__init__.py:44\u001b[0m\n\u001b[1;32m     41\u001b[0m     mlflow\u001b[38;5;241m.\u001b[39mmismatch\u001b[38;5;241m.\u001b[39m_check_version_mismatch()\n\u001b[1;32m     43\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m IS_TRACING_SDK_ONLY:\n\u001b[0;32m---> 44\u001b[0m     \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m (\n\u001b[1;32m     45\u001b[0m         artifacts,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     46\u001b[0m         client,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     47\u001b[0m         config,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     48\u001b[0m         data,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     49\u001b[0m         exceptions,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     50\u001b[0m         genai,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     51\u001b[0m         models,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     52\u001b[0m         projects,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     53\u001b[0m         tracking,  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     54\u001b[0m     )\n\u001b[1;32m     56\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m tracing  \u001b[38;5;66;03m# noqa: F401\u001b[39;00m\n\u001b[1;32m     57\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01menvironment_variables\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m MLFLOW_CONFIGURE_LOGGING\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/mlflow/artifacts/__init__.py:11\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mtempfile\u001b[39;00m\n\u001b[1;32m      9\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mtyping\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Any\n\u001b[0;32m---> 11\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mentities\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mfile_info\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m FileInfo\n\u001b[1;32m     12\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mexceptions\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m MlflowException\n\u001b[1;32m     13\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotos\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mdatabricks_pb2\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m BAD_REQUEST, INVALID_PARAMETER_VALUE\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/mlflow/entities/__init__.py:6\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;124;03mThe ``mlflow.entities`` module defines entities returned by the MLflow\u001b[39;00m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;124;03m`REST API <../rest-api.html>`_.\u001b[39;00m\n\u001b[1;32m      4\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[0;32m----> 6\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mentities\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01massessment\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m (\n\u001b[1;32m      7\u001b[0m     Assessment,\n\u001b[1;32m      8\u001b[0m     AssessmentError,\n\u001b[1;32m      9\u001b[0m     AssessmentSource,\n\u001b[1;32m     10\u001b[0m     AssessmentSourceType,\n\u001b[1;32m     11\u001b[0m     Expectation,\n\u001b[1;32m     12\u001b[0m     Feedback,\n\u001b[1;32m     13\u001b[0m )\n\u001b[1;32m     14\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mentities\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mdataset\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Dataset\n\u001b[1;32m     15\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mentities\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mdataset_input\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m DatasetInput\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/mlflow/entities/assessment.py:8\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mdataclasses\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m dataclass\n\u001b[1;32m      6\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mtyping\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Any\n\u001b[0;32m----> 8\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mgoogle\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotobuf\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mjson_format\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m MessageToDict, ParseDict\n\u001b[1;32m      9\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mgoogle\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotobuf\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mstruct_pb2\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Value\n\u001b[1;32m     11\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mmlflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mentities\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01m_mlflow_object\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m _MlflowObject\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/google/protobuf/json_format.py:30\u001b[0m\n\u001b[1;32m     27\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01moperator\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m methodcaller\n\u001b[1;32m     28\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mre\u001b[39;00m\n\u001b[0;32m---> 30\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mgoogle\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotobuf\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m descriptor\n\u001b[1;32m     31\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mgoogle\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotobuf\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m message_factory\n\u001b[1;32m     32\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mgoogle\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotobuf\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m symbol_database\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/google/protobuf/descriptor.py:28\u001b[0m\n\u001b[1;32m     26\u001b[0m   \u001b[38;5;66;03m# TODO: Remove this import after fix api_implementation\u001b[39;00m\n\u001b[1;32m     27\u001b[0m   \u001b[38;5;28;01mif\u001b[39;00m _message \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[0;32m---> 28\u001b[0m     \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mgoogle\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mprotobuf\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mpyext\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m _message\n\u001b[1;32m     29\u001b[0m   _USE_C_DESCRIPTORS \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mTrue\u001b[39;00m\n\u001b[1;32m     32\u001b[0m \u001b[38;5;28;01mclass\u001b[39;00m \u001b[38;5;21;01mError\u001b[39;00m(\u001b[38;5;167;01mException\u001b[39;00m):\n\n\u001b[0;31mImportError\u001b[0m: dlopen(/opt/anaconda3/lib/python3.12/site-packages/google/protobuf/pyext/_message.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libprotobuf.31.dylib\n  Referenced from: <57312C09-8E5F-3254-9F23-4C6F7F840101> /opt/anaconda3/lib/python3.12/site-packages/google/protobuf/pyext/_message.cpython-312-darwin.so\n  Reason: tried: '/opt/anaconda3/lib/python3.12/site-packages/google/protobuf/pyext/../../../../../libprotobuf.31.dylib' (no such file), '/opt/anaconda3/lib/python3.12/site-packages/google/protobuf/pyext/../../../../../libprotobuf.31.dylib' (no such file), '/opt/anaconda3/bin/../lib/libprotobuf.31.dylib' (no such file), '/opt/anaconda3/bin/../lib/libprotobuf.31.dylib' (no such file), '/usr/local/lib/libprotobuf.31.dylib' (no such file), '/usr/lib/libprotobuf.31.dylib' (no such file, not in dyld cache)\n\n"
+    }
+  ]
+}

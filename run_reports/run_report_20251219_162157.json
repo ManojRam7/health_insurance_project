@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "run_id": "20251219_162157",
+    "started_utc": "2025-12-19T16:21:57.249538",
+    "finished_utc": "2025-12-19T16:28:45.961868",
+    "duration_seconds": 408.71233,
+    "from_index": 22,
+    "overall_status": "FAILED",
+    "total_notebooks": 24,
+    "success_count": 1,
+    "failed_count": 1
+  },
+  "notebooks": [
+    {
+      "index": 0,
+      "name": "Pre-pilot \u2013 Spark & ADLS connectivity (_00_Pre_Pilot/Jupyter Notebooks/01_spark_adls_connectors.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 1,
+      "name": "Bronze \u2013 data container & mounts (_01_Bronze/Jupyter Notebooks/00_bronze_data_connector.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 2,
+      "name": "Bronze \u2013 raw CSV \u2192 Delta (_01_Bronze/Jupyter Notebooks/01_data_load.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 3,
+      "name": "Silver \u2013 Policies (_02_Silver/Jupyter Notebooks/Policies/01_policies_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 4,
+      "name": "Silver \u2013 Members (_02_Silver/Jupyter Notebooks/Members/02_members_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 5,
+      "name": "Silver \u2013 Claims (_02_Silver/Jupyter Notebooks/Claims/03_claims_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 6,
+      "name": "Silver \u2013 Providers (_02_Silver/Jupyter Notebooks/Providers/04_providers_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 7,
+      "name": "Gold \u2013 fact_claims (_03_Gold/01_fact_dim_dm_star/_01__fact_claims/01_fact_claims.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 8,
+      "name": "Gold \u2013 fact_policies (_03_Gold/01_fact_dim_dm_star/_02__fact_policies/01_fact_policies.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 9,
+      "name": "Gold \u2013 fact_members (_03_Gold/01_fact_dim_dm_star/_03__fact_members/01_fact_members.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 10,
+      "name": "Gold \u2013 dim tables (channel, product, region, member_segment) (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/01_dim_tables.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 11,
+      "name": "Gold \u2013 dim_providers (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/02_dim_providers.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 12,
+      "name": "Gold \u2013 dm_policy_retention (_03_Gold/01_fact_dim_dm_star/_05__data_marts/01_dm_policy_retention.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 13,
+      "name": "Gold \u2013 dm_member_value (_03_Gold/01_fact_dim_dm_star/_05__data_marts/02_dm_member_value.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 14,
+      "name": "Gold \u2013 dm_claims_experience (_03_Gold/01_fact_dim_dm_star/_05__data_marts/03_dm_claims_experience.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 15,
+      "name": "Gold \u2013 star_claims (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/01_star_claims.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 16,
+      "name": "Gold \u2013 star_policies (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/02_star_policies.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 17,
+      "name": "Gold \u2013 star_members (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/03_star_members.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 18,
+      "name": "ML Features \u2013 claim features (_03_Gold/02_ML_Features/01_claim_features.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 19,
+      "name": "ML Features \u2013 feature analysis (_03_Gold/02_ML_Features/02_ML_Feature_Analysis.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 20,
+      "name": "ML \u2013 policy churn model (_03_Gold/03_ML_Model_Training/01_policy_churn_prediction/01_policy_churn_training.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 21,
+      "name": "ML \u2013 claims fraud model (_03_Gold/03_ML_Model_Training/02_claims_risk_prediction/01_Is_fraudulent_claim.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 22,
+      "name": "ML \u2013 high-cost claims model (_03_Gold/03_ML_Model_Training/02_claims_risk_prediction/02_Is_high_cost_model.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T16:21:57.250473",
+      "finished_utc": "2025-12-19T16:28:45.949738",
+      "duration_seconds": 408.6875980000477,
+      "error": null
+    },
+    {
+      "index": 23,
+      "name": "ML \u2013 batch scoring policy churn (_03_Gold/03_batch_scoring/01_score_policy_churn.ipynb)",
+      "status": "FAILED",
+      "started_utc": "2025-12-19T16:28:45.953041",
+      "finished_utc": "2025-12-19T16:28:45.961853",
+      "duration_seconds": 0.008803167031146586,
+      "error": "Traceback (most recent call last):\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 462, in main\n    execute_notebook(nb_path)\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 311, in execute_notebook\n    with nb_path.open(\"r\", encoding=\"utf-8\") as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/manojrammopati/Public/Projects/bupa_insurance_project/_03_Gold/03_batch_scoring/01_score_policy_churn.ipynb'\n"
+    }
+  ]
+}

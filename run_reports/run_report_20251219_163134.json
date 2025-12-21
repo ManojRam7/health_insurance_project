@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "run_id": "20251219_163134",
+    "started_utc": "2025-12-19T16:31:34.123350",
+    "finished_utc": "2025-12-19T16:38:12.208840",
+    "duration_seconds": 398.08549,
+    "from_index": 23,
+    "overall_status": "FAILED",
+    "total_notebooks": 27,
+    "success_count": 3,
+    "failed_count": 1
+  },
+  "notebooks": [
+    {
+      "index": 0,
+      "name": "Pre-pilot \u2013 Spark & ADLS connectivity (_00_Pre_Pilot/Jupyter Notebooks/01_spark_adls_connectors.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 1,
+      "name": "Bronze \u2013 data container & mounts (_01_Bronze/Jupyter Notebooks/00_bronze_data_connector.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 2,
+      "name": "Bronze \u2013 raw CSV \u2192 Delta (_01_Bronze/Jupyter Notebooks/01_data_load.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 3,
+      "name": "Silver \u2013 Policies (_02_Silver/Jupyter Notebooks/Policies/01_policies_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 4,
+      "name": "Silver \u2013 Members (_02_Silver/Jupyter Notebooks/Members/02_members_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 5,
+      "name": "Silver \u2013 Claims (_02_Silver/Jupyter Notebooks/Claims/03_claims_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 6,
+      "name": "Silver \u2013 Providers (_02_Silver/Jupyter Notebooks/Providers/04_providers_silver.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 7,
+      "name": "Gold \u2013 fact_claims (_03_Gold/01_fact_dim_dm_star/_01__fact_claims/01_fact_claims.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 8,
+      "name": "Gold \u2013 fact_policies (_03_Gold/01_fact_dim_dm_star/_02__fact_policies/01_fact_policies.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 9,
+      "name": "Gold \u2013 fact_members (_03_Gold/01_fact_dim_dm_star/_03__fact_members/01_fact_members.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 10,
+      "name": "Gold \u2013 dim tables (channel, product, region, member_segment) (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/01_dim_tables.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 11,
+      "name": "Gold \u2013 dim_providers (_03_Gold/01_fact_dim_dm_star/_04__dim_tables/02_dim_providers.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 12,
+      "name": "Gold \u2013 dm_policy_retention (_03_Gold/01_fact_dim_dm_star/_05__data_marts/01_dm_policy_retention.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 13,
+      "name": "Gold \u2013 dm_member_value (_03_Gold/01_fact_dim_dm_star/_05__data_marts/02_dm_member_value.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 14,
+      "name": "Gold \u2013 dm_claims_experience (_03_Gold/01_fact_dim_dm_star/_05__data_marts/03_dm_claims_experience.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 15,
+      "name": "Gold \u2013 star_claims (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/01_star_claims.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 16,
+      "name": "Gold \u2013 star_policies (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/02_star_policies.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 17,
+      "name": "Gold \u2013 star_members (_03_Gold/01_fact_dim_dm_star/_06__star_schemas/03_star_members.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 18,
+      "name": "ML Features \u2013 claim features (_03_Gold/02_ML_Features/01_claim_features.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 19,
+      "name": "ML Features \u2013 feature analysis (_03_Gold/02_ML_Features/02_ML_Feature_Analysis.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 20,
+      "name": "ML \u2013 policy churn model (_03_Gold/03_ML_Model_Training/01_policy_churn_prediction/01_policy_churn_training.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 21,
+      "name": "ML \u2013 claims fraud model (_03_Gold/03_ML_Model_Training/02_claims_risk_prediction/01_Is_fraudulent_claim.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 22,
+      "name": "ML \u2013 high-cost claims model (_03_Gold/03_ML_Model_Training/02_claims_risk_prediction/02_Is_high_cost_model.ipynb)",
+      "status": "SKIPPED",
+      "started_utc": null,
+      "finished_utc": null,
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "index": 23,
+      "name": "ML \u2013 batch scoring policy churn (_03_Gold/03_ML_Model_Training/03_batch_scoring/01_score_policy_churn.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T16:31:34.124211",
+      "finished_utc": "2025-12-19T16:33:21.346506",
+      "duration_seconds": 107.22012333304156,
+      "error": null
+    },
+    {
+      "index": 24,
+      "name": "ML \u2013 batch scoring claim fraud (_03_Gold/03_ML_Model_Training/03_batch_scoring/02_score_claim_fraud.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T16:33:21.346773",
+      "finished_utc": "2025-12-19T16:35:27.412765",
+      "duration_seconds": 126.06344712490682,
+      "error": null
+    },
+    {
+      "index": 25,
+      "name": "ML \u2013 batch scoring high-cost claims (_03_Gold/03_ML_Model_Training/03_batch_scoring/03_score_high_cost_claims.ipynb)",
+      "status": "SUCCESS",
+      "started_utc": "2025-12-19T16:35:27.414023",
+      "finished_utc": "2025-12-19T16:37:08.458676",
+      "duration_seconds": 101.04261337500066,
+      "error": null
+    },
+    {
+      "index": 26,
+      "name": "ML \u2013 monitorin overview (_03_Gold/03_ML_Model_Training/04_ml_monitoring/01_ml_monitoring_overview.ipynb)",
+      "status": "FAILED",
+      "started_utc": "2025-12-19T16:37:08.458924",
+      "finished_utc": "2025-12-19T16:38:12.208806",
+      "duration_seconds": 63.74859837500844,
+      "error": "Traceback (most recent call last):\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 465, in main\n    execute_notebook(nb_path)\n  File \"/Users/manojrammopati/Public/Projects/bupa_insurance_project/Master_Run_Pipeline.py\", line 318, in execute_notebook\n    ep.preprocess(nb, {\"metadata\": {\"path\": str(nb_path.parent)}})\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbconvert/preprocessors/execute.py\", line 102, in preprocess\n    self.preprocess_cell(cell, resources, index)\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbconvert/preprocessors/execute.py\", line 123, in preprocess_cell\n    cell = self.execute_cell(cell, index, store_history=True)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbclient/client.py\", line 1058, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.12/site-packages/nbclient/client.py\", line 914, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# Cell 8 \u2014 Persist ml_monitoring compact view as a Delta table\n\nDB_GOLD    = \"bupa_gold\"\nTABLE_NAME = \"ml_monitoring_view\"\n\n# Drop any existing TABLE or VIEW with this name\nspark.sql(f\"DROP TABLE IF EXISTS {DB_GOLD}.{TABLE_NAME}\")\nspark.sql(f\"DROP VIEW  IF EXISTS {DB_GOLD}.{TABLE_NAME}\")\n\n# Write out the compact table as Delta\n(\n    ml_mon\n      .select(\n          \"run_ts\",\n          \"use_case\",\n          \"model_name\",\n          \"dataset_name\",\n          \"dataset_split\",\n          \"auc\",\n          \"accuracy\",\n          \"precision\",\n          \"recall\",\n          \"f1\",\n          \"notes\",\n      )\n      .write.format(\"delta\")\n      .mode(\"overwrite\")\n      .option(\"overwriteSchema\", \"true\")\n      .saveAsTable(f\"{DB_GOLD}.{TABLE_NAME}\")\n)\n\nprint(f\"\u2705 Created Delta table: {DB_GOLD}.{TABLE_NAME}\")\nspark.table(f\"{DB_GOLD}.{TABLE_NAME}\").show(20, truncate=False)\n\n------------------\n\n----- stderr -----\n25/12/19 16:38:09 ERROR Utils: Aborting task\norg.apache.spark.sql.AnalysisException: Table ml_monitoring_view does not support truncate in batch mode.;\nOverwriteByExpression RelationV2[run_ts#2963, use_case#2964, model_name#2965, dataset_name#2966, dataset_split#2967, auc#2968, accuracy#2969, precision#2970, recall#2971, f1#2972, notes#2973] spark_catalog.bupa_gold.ml_monitoring_view ml_monitoring_view, true, [overwriteSchema=true], false\n+- Project [run_ts#1191, use_case#1193, model_name#1192, dataset_name#1194, dataset_split#1195, auc#1196, accuracy#1197, precision#1198, recall#1199, f1#1200, notes#1201]\n   +- Relation [run_ts#1191,model_name#1192,use_case#1193,dataset_name#1194,dataset_split#1195,auc#1196,accuracy#1197,precision#1198,recall#1199,f1#1200,notes#1201] parquet\n\n\tat org.apache.spark.sql.errors.QueryCompilationErrors$.unsupportedTableOperationError(QueryCompilationErrors.scala:1277)\n\tat org.apache.spark.sql.errors.QueryCompilationErrors$.unsupportedTruncateInBatchModeError(QueryCompilationErrors.scala:1297)\n\tat org.apache.spark.sql.execution.datasources.v2.TableCapabilityCheck$.$anonfun$apply$1(TableCapabilityCheck.scala:61)\n\tat org.apache.spark.sql.execution.datasources.v2.TableCapabilityCheck$.$anonfun$apply$1$adapted(TableCapabilityCheck.scala:40)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.foreach(TreeNode.scala:234)\n\tat org.apache.spark.sql.execution.datasources.v2.TableCapabilityCheck$.apply(TableCapabilityCheck.scala:40)\n\tat org.apache.spark.sql.execution.datasources.v2.TableCapabilityCheck$.apply(TableCapabilityCheck.scala:32)\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$60(CheckAnalysis.scala:822)\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$60$adapted(CheckAnalysis.scala:822)\n\tat scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)\n\tat scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)\n\tat scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:822)\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:197)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:202)\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:193)\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:171)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:202)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:225)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:330)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:222)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:77)\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:138)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:219)\n\tat org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:546)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:219)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n\tat org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:218)\n\tat org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:77)\n\tat org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:74)\n\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n\tat org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:587)\n\tat org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)\n\tat org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:579)\n\tat org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)\n\tat org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)\n\tat org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)\n\tat org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)\n\tat org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)\n\tat org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)\n\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:869)\n\tat org.apache.spark.sql.DataFrameWriter.saveAsTable(DataFrameWriter.scala:645)\n\tat org.apache.spark.sql.DataFrameWriter.saveAsTable(DataFrameWriter.scala:579)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n\tat py4j.Gateway.invoke(Gateway.java:282)\n\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n\tat java.base/java.lang.Thread.run(Thread.java:840)\n------------------\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mAnalysisException\u001b[0m                         Traceback (most recent call last)\nCell \u001b[0;32mIn[10], line 29\u001b[0m\n\u001b[1;32m      8\u001b[0m spark\u001b[38;5;241m.\u001b[39msql(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mDROP VIEW  IF EXISTS \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mDB_GOLD\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m.\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mTABLE_NAME\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m     10\u001b[0m \u001b[38;5;66;03m# Write out the compact table as Delta\u001b[39;00m\n\u001b[1;32m     11\u001b[0m (\n\u001b[1;32m     12\u001b[0m     ml_mon\n\u001b[1;32m     13\u001b[0m       \u001b[38;5;241m.\u001b[39mselect(\n\u001b[1;32m     14\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mrun_ts\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     15\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124muse_case\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     16\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mmodel_name\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     17\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdataset_name\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     18\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdataset_split\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     19\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mauc\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     20\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124maccuracy\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     21\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mprecision\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     22\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mrecall\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     23\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mf1\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     24\u001b[0m           \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnotes\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m     25\u001b[0m       )\n\u001b[1;32m     26\u001b[0m       \u001b[38;5;241m.\u001b[39mwrite\u001b[38;5;241m.\u001b[39mformat(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdelta\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m     27\u001b[0m       \u001b[38;5;241m.\u001b[39mmode(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124moverwrite\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m     28\u001b[0m       \u001b[38;5;241m.\u001b[39moption(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124moverwriteSchema\u001b[39m\u001b[38;5;124m\"\u001b[39m, \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mtrue\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[0;32m---> 29\u001b[0m       \u001b[38;5;241m.\u001b[39msaveAsTable(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mDB_GOLD\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m.\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mTABLE_NAME\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m     30\u001b[0m )\n\u001b[1;32m     32\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m\u2705 Created Delta table: \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mDB_GOLD\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m.\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mTABLE_NAME\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m     33\u001b[0m spark\u001b[38;5;241m.\u001b[39mtable(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mDB_GOLD\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m.\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mTABLE_NAME\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m)\u001b[38;5;241m.\u001b[39mshow(\u001b[38;5;241m20\u001b[39m, truncate\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mFalse\u001b[39;00m)\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/pyspark/sql/readwriter.py:1586\u001b[0m, in \u001b[0;36mDataFrameWriter.saveAsTable\u001b[0;34m(self, name, format, mode, partitionBy, **options)\u001b[0m\n\u001b[1;32m   1584\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28mformat\u001b[39m \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[1;32m   1585\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mformat(\u001b[38;5;28mformat\u001b[39m)\n\u001b[0;32m-> 1586\u001b[0m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_jwrite\u001b[38;5;241m.\u001b[39msaveAsTable(name)\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/py4j/java_gateway.py:1322\u001b[0m, in \u001b[0;36mJavaMember.__call__\u001b[0;34m(self, *args)\u001b[0m\n\u001b[1;32m   1316\u001b[0m command \u001b[38;5;241m=\u001b[39m proto\u001b[38;5;241m.\u001b[39mCALL_COMMAND_NAME \u001b[38;5;241m+\u001b[39m\\\n\u001b[1;32m   1317\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mcommand_header \u001b[38;5;241m+\u001b[39m\\\n\u001b[1;32m   1318\u001b[0m     args_command \u001b[38;5;241m+\u001b[39m\\\n\u001b[1;32m   1319\u001b[0m     proto\u001b[38;5;241m.\u001b[39mEND_COMMAND_PART\n\u001b[1;32m   1321\u001b[0m answer \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mgateway_client\u001b[38;5;241m.\u001b[39msend_command(command)\n\u001b[0;32m-> 1322\u001b[0m return_value \u001b[38;5;241m=\u001b[39m get_return_value(\n\u001b[1;32m   1323\u001b[0m     answer, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mgateway_client, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mtarget_id, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname)\n\u001b[1;32m   1325\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m temp_arg \u001b[38;5;129;01min\u001b[39;00m temp_args:\n\u001b[1;32m   1326\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28mhasattr\u001b[39m(temp_arg, \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m_detach\u001b[39m\u001b[38;5;124m\"\u001b[39m):\n\nFile \u001b[0;32m/opt/anaconda3/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py:185\u001b[0m, in \u001b[0;36mcapture_sql_exception.<locals>.deco\u001b[0;34m(*a, **kw)\u001b[0m\n\u001b[1;32m    181\u001b[0m converted \u001b[38;5;241m=\u001b[39m convert_exception(e\u001b[38;5;241m.\u001b[39mjava_exception)\n\u001b[1;32m    182\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(converted, UnknownException):\n\u001b[1;32m    183\u001b[0m     \u001b[38;5;66;03m# Hide where the exception came from that shows a non-Pythonic\u001b[39;00m\n\u001b[1;32m    184\u001b[0m     \u001b[38;5;66;03m# JVM exception message.\u001b[39;00m\n\u001b[0;32m--> 185\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m converted \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[1;32m    186\u001b[0m \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m    187\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m\n\n\u001b[0;31mAnalysisException\u001b[0m: Table ml_monitoring_view does not support truncate in batch mode.;\nOverwriteByExpression RelationV2[run_ts#2963, use_case#2964, model_name#2965, dataset_name#2966, dataset_split#2967, auc#2968, accuracy#2969, precision#2970, recall#2971, f1#2972, notes#2973] spark_catalog.bupa_gold.ml_monitoring_view ml_monitoring_view, true, [overwriteSchema=true], false\n+- Project [run_ts#1191, use_case#1193, model_name#1192, dataset_name#1194, dataset_split#1195, auc#1196, accuracy#1197, precision#1198, recall#1199, f1#1200, notes#1201]\n   +- Relation [run_ts#1191,model_name#1192,use_case#1193,dataset_name#1194,dataset_split#1195,auc#1196,accuracy#1197,precision#1198,recall#1199,f1#1200,notes#1201] parquet\n\n\n"
+    }
+  ]
+}
