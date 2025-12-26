@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.OneHotEncoderModel","timestamp":1765490872280,"sparkVersion":"3.5.1","uid":"OneHotEncoder_16a1efb1f633","paramMap":{"outputCol":"Renewal_Outcome_oh","inputCol":"Renewal_Outcome_idx"},"defaultParamMap":{"dropLast":true,"handleInvalid":"error","outputCol":"OneHotEncoder_16a1efb1f633__output"}}

@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1765557033734,"sparkVersion":"3.5.1","uid":"StringIndexer_ac7fedb88cb5","paramMap":{"inputCol":"Tenure_Band","handleInvalid":"keep","outputCol":"Tenure_Band_idx"},"defaultParamMap":{"handleInvalid":"error","stringOrderType":"frequencyDesc","outputCol":"StringIndexer_ac7fedb88cb5__output"}}
