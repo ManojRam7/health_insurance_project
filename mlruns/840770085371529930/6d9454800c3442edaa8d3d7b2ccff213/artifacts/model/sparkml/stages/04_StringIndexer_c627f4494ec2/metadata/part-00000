@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1765542579352,"sparkVersion":"3.5.1","uid":"StringIndexer_c627f4494ec2","paramMap":{"handleInvalid":"keep","inputCol":"Discount_Band","outputCol":"Discount_Band_idx"},"defaultParamMap":{"stringOrderType":"frequencyDesc","handleInvalid":"error","outputCol":"StringIndexer_c627f4494ec2__output"}}

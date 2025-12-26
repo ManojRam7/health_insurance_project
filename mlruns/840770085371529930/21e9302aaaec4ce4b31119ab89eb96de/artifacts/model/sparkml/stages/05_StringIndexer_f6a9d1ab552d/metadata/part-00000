@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1765557371237,"sparkVersion":"3.5.1","uid":"StringIndexer_f6a9d1ab552d","paramMap":{"inputCol":"Renewal_Outcome","outputCol":"Renewal_Outcome_idx","handleInvalid":"keep"},"defaultParamMap":{"outputCol":"StringIndexer_f6a9d1ab552d__output","stringOrderType":"frequencyDesc","handleInvalid":"error"}}

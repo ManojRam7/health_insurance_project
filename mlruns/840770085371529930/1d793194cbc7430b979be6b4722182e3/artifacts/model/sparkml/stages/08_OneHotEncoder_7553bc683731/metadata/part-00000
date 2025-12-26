@@ -1,1 +1,0 @@
-{"class":"org.apache.spark.ml.feature.OneHotEncoderModel","timestamp":1765499066121,"sparkVersion":"3.5.1","uid":"OneHotEncoder_7553bc683731","paramMap":{"inputCol":"Channel_idx","outputCol":"Channel_oh"},"defaultParamMap":{"dropLast":true,"handleInvalid":"error","outputCol":"OneHotEncoder_7553bc683731__output"}}
