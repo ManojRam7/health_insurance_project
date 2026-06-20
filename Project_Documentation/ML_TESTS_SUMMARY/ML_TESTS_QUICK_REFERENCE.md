@@ -7,11 +7,9 @@ tests/unit/
 ├── test_ml_models.py              (44 tests) - Model performance, versioning, config
 ├── test_data_pipeline.py          (43 tests) - Data quality, layers, transformations
 ├── test_feature_engineering.py    (33 tests) - Feature engineering, encoding, imputation
-├── ML_TESTS_DOCUMENTATION.md      (350+ lines) - Comprehensive documentation
 └── run_ml_tests.sh                (Test runner script)
 
 Root files:
-├── ML_TEST_IMPLEMENTATION_SUMMARY.md - This summary document
 └── pytest.ini                        - Pytest configuration (existing)
 ```
 
@@ -210,19 +208,10 @@ python -m pytest tests/unit/test_feature_engineering.py::TestPolicyChurmFeatures
 
 ## 📚 Documentation
 
-### Files Created
-1. **tests/ML_TESTS_DOCUMENTATION.md** (350+ lines)
-   - Complete test inventory
-   - Expected results for each test
-   - Running instructions
-   - Coverage details
-   - Troubleshooting guide
-
-2. **ML_TEST_IMPLEMENTATION_SUMMARY.md** (this document)
-   - Quick overview
-   - Test statistics
-   - Key validations
-   - Getting started guide
+This quick reference is the canonical test summary for the project. For broader context, see:
+- `Project_Documentation/PROJECT_OVERVIEW.md`
+- `README.md`
+- `QUICK_REFERENCE.md`
 
 ## ✨ Key Features
 
@@ -256,15 +245,13 @@ jobs:
 ## 📞 Support
 
 For questions or issues:
-1. Check ML_TESTS_DOCUMENTATION.md for detailed info
+1. Check this document for test scope and commands
 2. Review specific test class for validation logic
 3. Check test failures for actionable error messages
 
 ---
 
 **Quick Links**:
-- 📖 [Full Documentation](tests/ML_TESTS_DOCUMENTATION.md)
-- 📊 [Test Summary](ML_TEST_IMPLEMENTATION_SUMMARY.md)
 - 🧪 [ML Models Tests](tests/unit/test_ml_models.py)
 - 📈 [Data Pipeline Tests](tests/unit/test_data_pipeline.py)
 - 🎯 [Feature Engineering Tests](tests/unit/test_feature_engineering.py)

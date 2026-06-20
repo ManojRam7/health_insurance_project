@@ -201,10 +201,10 @@ ESTIMATED MONTHLY COST:        $1,750-2,750
 | Document | Purpose | Location |
 |----------|---------|----------|
 | **DEPLOYMENT_ROADMAP.md** | Step-by-step deployment (THIS WEEK) | /root |
-| **ENTERPRISE_READINESS_ASSESSMENT.md** | Full enterprise assessment | /Project_Documentation/ |
+| **PROJECT_OVERVIEW.md** | Full end-to-end project overview | /Project_Documentation/ |
 | **README_PRODUCTION.md** | Setup & operation guide | /Project_Documentation/Phase_4_Documentation/ |
-| **ARCHITECTURE.md** | System design & data flow | /Project_Documentation/ |
-| **ML_TESTS_DOCUMENTATION.md** | Test suite details | /Project_Documentation/ |
+| **ARCHITECTURE.md** | System design & data flow | /Project_Documentation/Architecture/ |
+| **ML_TESTS_QUICK_REFERENCE.md** | Model and test quick details | /Project_Documentation/ML_TESTS_SUMMARY/ |
 
 ---
 
@@ -240,7 +240,7 @@ Do you need enterprise SLAs?
 **For ML Pipeline Questions**:
 - Architecture: See ARCHITECTURE.md
 - Setup: See README_PRODUCTION.md
-- Tests: See ML_TESTS_DOCUMENTATION.md
+- Tests: See ML_TESTS_QUICK_REFERENCE.md
 
 **For Release Management**:
 - GitHub: https://github.com/ManojRam7/bupa_insurance_project/releases

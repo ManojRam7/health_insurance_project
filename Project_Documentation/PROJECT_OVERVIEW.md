@@ -526,7 +526,10 @@ bupa_insurance_project/
 │   └── tests/                       # Test results
 │
 ├── Project_Documentation/           # Documentation
-│   └── COMPREHENSIVE_PIPELINE_AUDIT.md (3000+ lines)
+│   ├── PROJECT_OVERVIEW.md
+│   ├── Architecture/ARCHITECTURE.md
+│   ├── ML_TESTS_SUMMARY/ML_TESTS_QUICK_REFERENCE.md
+│   └── Phase_4_Documentation/README_PRODUCTION.md
 │
 ├── Master_Run_Pipeline.py           # Main orchestration (577 lines)
 ├── run_pipeline_clean.sh            # Bash wrapper
@@ -1260,7 +1263,7 @@ python -m pytest tests/unit/ -v
 1. Run specific test: `pytest tests/unit/test_ml_models.py::TestModelPerformanceThresholds -vv`
 2. Check configuration values match test expectations
 3. Verify actual model metrics: `cat logs/model_evaluation_report*.json`
-4. Review test documentation: `tests/ML_TESTS_DOCUMENTATION.md`
+4. Review test documentation: `Project_Documentation/ML_TESTS_SUMMARY/ML_TESTS_QUICK_REFERENCE.md`
 
 #### Issue 5: Slow Pipeline Execution
 
@@ -1336,12 +1339,9 @@ python -m pytest tests/unit/ -v
 |----------|---------|--------|
 | `PROJECT_OVERVIEW.md` | **This document** - Complete guide | 200+ sections |
 | `README.md` | Quick start guide | 50 sections |
-| `COMPREHENSIVE_PIPELINE_AUDIT.md` | Detailed technical audit | 3000+ lines |
-| `ML_TESTS_DOCUMENTATION.md` | ML test suite docs | 350+ lines |
-| `ML_TESTS_MASTER_INDEX.md` | Test navigation guide | 300+ lines |
 | `ML_TESTS_QUICK_REFERENCE.md` | Quick reference | 300+ lines |
-| `ML_TESTS_VISUAL_SUMMARY.md` | Visual test breakdown | 500+ lines |
-| `ML_TEST_IMPLEMENTATION_SUMMARY.md` | Implementation details | 400+ lines |
+| `README_PRODUCTION.md` | Production operations guide | 200+ lines |
+| `ARCHITECTURE.md` | System design and flow | 200+ lines |
 
 ---
 

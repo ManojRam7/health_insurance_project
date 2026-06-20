@@ -326,7 +326,7 @@ Available on GCP:
 ## 📞 Next Actions
 
 ### This Week
-1. **Review Enterprise Assessment**: Read `ENTERPRISE_READINESS_ASSESSMENT.md`
+1. **Review Project Assessment**: Read `QUICK_REFERENCE.md` and `Project_Documentation/PROJECT_OVERVIEW.md`
 2. **Approve v1.0.0 Release**: Check GitHub releases
 3. **Plan GCP Project**: Get stakeholder approval
 4. **Schedule migration kickoff**: Set dates for Week 1-3
@@ -348,7 +348,8 @@ Available on GCP:
 ## 📚 Resources
 
 **Documentation**:
-- `ENTERPRISE_READINESS_ASSESSMENT.md` - Full assessment
+- `QUICK_REFERENCE.md` - Enterprise readiness summary
+- `Project_Documentation/PROJECT_OVERVIEW.md` - End-to-end project assessment
 - `README_PRODUCTION.md` - Setup guide
 - `ARCHITECTURE.md` - System design
 - `Project_Documentation/` - All project docs

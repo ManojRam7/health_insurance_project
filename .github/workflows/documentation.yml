@@ -1,0 +1,40 @@
+name: documentation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - ".github/workflows/documentation.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - ".github/workflows/documentation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docs-validation:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            **/*.md
+            !test-results/**/*.md
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress --accept 200,429 '**/*.md' '!test-results/**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -5,6 +5,22 @@ All notable changes to the BUPA Insurance ML Pipeline project will be documented
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **Professional Portfolio Automation Assets**
+  - Added `.github/ISSUE_TEMPLATE/bug_report.md`
+  - Added `.github/ISSUE_TEMPLATE/feature_request.md`
+  - Added `.github/ISSUE_TEMPLATE/test_failure.md`
+  - Added `.github/ISSUE_TEMPLATE/documentation.md`
+  - Added `.github/workflows/code-quality.yml`
+  - Added `.github/workflows/documentation.yml`
+  - Added root `Dockerfile`
+
+### Changed
+- Expanded `.github/workflows/ci.yml` to run lint + unit tests on Python 3.9, 3.10, and 3.11
+- Updated `README.md` with GitHub badges and Docker quick-start section
+
 ## [1.0.0] - 2026-06-20
 
 ### Added
