@@ -20,8 +20,7 @@ cd bupa_insurance_project
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-pip install -e ".[dev]"
+pip install -r requirements-dev.txt
 ```
 
 ### 3. Create a Feature Branch
