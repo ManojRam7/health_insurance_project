@@ -1,4 +1,4 @@
-# Contributing to BUPA Insurance ML Pipeline
+# Contributing to Health Insurance ML Pipeline
 
 Thank you for your interest in contributing! This document provides guidelines and instructions for contributing to the project.
 
@@ -12,8 +12,8 @@ Thank you for your interest in contributing! This document provides guidelines a
 
 ### 1. Fork & Clone
 ```bash
-git clone https://github.com/YOUR_USERNAME/bupa_insurance_project.git
-cd bupa_insurance_project
+git clone https://github.com/ManojRam7/health_insurance_project.git
+cd health_insurance_project
 ```
 
 ### 2. Set Up Development Environment
@@ -113,7 +113,7 @@ Create an issue with:
 ## 📦 Project Structure
 
 ```
-bupa_insurance_project/
+health_insurance_project/
 ├── src/                    # Source code
 ├── tests/                  # Test suite
 ├── notebooks/              # Jupyter notebooks

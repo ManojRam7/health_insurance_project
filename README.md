@@ -2,9 +2,9 @@
 
 Enterprise-grade machine learning platform for healthcare insurance analytics with an end-to-end medallion pipeline, feature engineering, model training, and batch scoring.
 
-[![CI](https://img.shields.io/github/actions/workflow/status/ManojRam7/bupa_insurance_project/ci.yml?branch=main&label=CI)](https://github.com/ManojRam7/bupa_insurance_project/actions/workflows/ci.yml)
-[![Code Quality](https://img.shields.io/github/actions/workflow/status/ManojRam7/bupa_insurance_project/code-quality.yml?branch=main&label=Code%20Quality)](https://github.com/ManojRam7/bupa_insurance_project/actions/workflows/code-quality.yml)
-[![Docs](https://img.shields.io/github/actions/workflow/status/ManojRam7/bupa_insurance_project/documentation.yml?branch=main&label=Docs)](https://github.com/ManojRam7/bupa_insurance_project/actions/workflows/documentation.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/ManojRam7/health_insurance_project/ci.yml?branch=main&label=CI)](https://github.com/ManojRam7/health_insurance_project/actions/workflows/ci.yml)
+[![Code Quality](https://img.shields.io/github/actions/workflow/status/ManojRam7/health_insurance_project/code-quality.yml?branch=main&label=Code%20Quality)](https://github.com/ManojRam7/health_insurance_project/actions/workflows/code-quality.yml)
+[![Docs](https://img.shields.io/github/actions/workflow/status/ManojRam7/health_insurance_project/documentation.yml?branch=main&label=Docs)](https://github.com/ManojRam7/health_insurance_project/actions/workflows/documentation.yml)
 [![Python](https://img.shields.io/badge/Python-3.9%20|%203.10%20|%203.11-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -41,7 +41,7 @@ For full technical architecture, see:
 ## Repository Map
 
 ```text
-bupa_insurance_project/
+health_insurance_project/
 ├── Master_Run_Pipeline.py
 ├── config/
 ├── src/
@@ -84,8 +84,8 @@ pytest tests/
 ## Docker
 
 ```bash
-docker build -t bupa-insurance-ml .
-docker run --rm bupa-insurance-ml
+docker build -t health-insurance-ml .
+docker run --rm health-insurance-ml
 ```
 
 Use Docker for reproducible local execution and CI parity.

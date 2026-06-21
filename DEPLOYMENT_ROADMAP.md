@@ -1,4 +1,4 @@
-# ✅ ENTERPRISE DEPLOYMENT ROADMAP - BUPA Insurance ML Pipeline
+# ✅ ENTERPRISE DEPLOYMENT ROADMAP - Health Insurance ML Pipeline
 
 **Date**: December 26, 2025  
 **Status**: 🟢 READY FOR ENTERPRISE DEPLOYMENT  
@@ -11,7 +11,7 @@
 
 ### **YES ✅ - This is enterprise production-level code.**
 
-Your BUPA Insurance ML pipeline is ready for:
+Your Health Insurance ML pipeline is ready for:
 - ✅ GCP deployment (Dataproc, BigQuery, Vertex AI)
 - ✅ GitHub releases and versioning
 - ✅ Automated CI/CD pipelines
@@ -95,7 +95,7 @@ PRACTICAL ENTERPRISE SCORE: 8.5/10 ✅
 ### Week 1: Infrastructure Setup
 ```bash
 # 1. Create GCP Project
-gcloud projects create bupa-ml-prod --name="BUPA Insurance ML"
+gcloud projects create health-ml-prod --name="Health Insurance ML"
 
 # 2. Enable APIs
 gcloud services enable dataproc.googleapis.com
@@ -104,30 +104,30 @@ gcloud services enable storage-api.googleapis.com
 gcloud services enable cloudcomposer.googleapis.com
 
 # 3. Create Dataproc Cluster (Spark equivalent)
-gcloud dataproc clusters create bupa-prod-cluster \
+gcloud dataproc clusters create health-prod-cluster \
   --region=us-central1 \
   --num-workers=3 \
   --image-version=2.1-debian11
 
 # 4. Create BigQuery Datasets
-bq mk --dataset bupa_bronze
-bq mk --dataset bupa_silver  
-bq mk --dataset bupa_gold
+bq mk --dataset health_bronze
+bq mk --dataset health_silver  
+bq mk --dataset health_gold
 
 # 5. Create GCS Buckets
-gsutil mb gs://bupa-data-prod/
-gsutil versioning set on gs://bupa-data-prod/
+gsutil mb gs://health-data-prod/
+gsutil versioning set on gs://health-data-prod/
 ```
 
 ### Week 1-2: Code Migration
 ```python
 # Replace Azure ADLS paths
-# FROM: abfss://raw@bupaaccnt.dfs.core.windows.net/
-# TO:   gs://bupa-data-prod/raw/
+# FROM: abfss://raw@healthaccnt.dfs.core.windows.net/
+# TO:   gs://health-data-prod/raw/
 
 # Replace SQL Server with BigQuery
 # FROM: pyodbc.connect(server='...')
-# TO:   bigquery.Client().get_table('bupa_gold.table_name')
+# TO:   bigquery.Client().get_table('health_gold.table_name')
 
 # Replace KeyVault with Cloud Secret Manager
 # FROM: client.get_secret('connection-string')
@@ -137,15 +137,15 @@ gsutil versioning set on gs://bupa-data-prod/
 ### Week 2-3: Airflow Setup & Testing
 ```bash
 # Create Cloud Composer environment
-gcloud composer environments create bupa-prod-composer \
+gcloud composer environments create health-prod-composer \
   --location=us-central1 \
   --python-version=3
 
 # Deploy DAGs
-gsutil cp dags/*.py gs://bupa-prod-composer/dags/
+gsutil cp dags/*.py gs://health-prod-composer/dags/
 
 # Test pipeline
-gcloud composer environments run bupa-prod-composer \
+gcloud composer environments run health-prod-composer \
   --location=us-central1 \
   dags test ml_pipeline_dag
 ```
@@ -361,8 +361,8 @@ Available on GCP:
 - [Vertex AI Model Registry](https://cloud.google.com/vertex-ai/docs/model-registry)
 
 **Your Repo**:
-- v1.0.0 Release: https://github.com/ManojRam7/bupa_insurance_project/releases/tag/v1.0.0
-- GitHub Actions: https://github.com/ManojRam7/bupa_insurance_project/actions
+- v1.0.0 Release: https://github.com/ManojRam7/health_insurance_project/releases/tag/v1.0.0
+- GitHub Actions: https://github.com/ManojRam7/health_insurance_project/actions
 
 ---
 
@@ -386,7 +386,7 @@ Available on GCP:
 
 ## 🎉 Summary
 
-Your BUPA Insurance ML Pipeline is **enterprise production-ready** at **9.5/10**. 
+Your Health Insurance ML Pipeline is **enterprise production-ready** at **9.5/10**. 
 
 **You can confidently**:
 - ✅ Deploy to GCP Dataproc in 2-3 weeks
