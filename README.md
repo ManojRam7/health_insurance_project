@@ -1,4 +1,4 @@
-# BUPA Insurance ML Pipeline
+# Health Insurance ML Pipeline
 
 Enterprise-grade machine learning platform for healthcare insurance analytics with an end-to-end medallion pipeline, feature engineering, model training, and batch scoring.
 
