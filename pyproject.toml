@@ -87,7 +87,6 @@ skip_gitignore = true
 
 [tool.pylint.messages_control]
 disable = [
-    "C0330", "C0326",  # Bad whitespace
     "R0903",           # Too few public methods
     "R0913",           # Too many arguments
 ]
